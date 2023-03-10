@@ -6,4 +6,4 @@
 4.実行をクリックする
 5.サーバーで実行をクリックする
 
-DBファイルは、codecamp.mv.dbです
+DBファイルは、codecamp.mv.dbです。
