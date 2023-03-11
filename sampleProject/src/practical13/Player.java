@@ -1,4 +1,4 @@
-package practical13;
+package practical13; //オブジェクト指向を用いた数字の大小を当てるハイ＆ローゲーム
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package practical12;
+package practical12; //CSVファイルの読み込みと書き出し
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -31,7 +31,7 @@ public class Practice {
 			try { //エラーが発生しうるブロック
 
 				List<String> linesList = Files.readAllLines(path3, charset);
-				String x = ""; //読み込んだデータの格納用 
+				String x = ""; //読み込んだデータの格納用
 
 				//1行ずつデータを取り出す
 				for (String s : linesList) {
@@ -92,16 +92,16 @@ public class Practice {
 						Files.write(path4, linesList, charset, StandardOpenOption.TRUNCATE_EXISTING);
 						k = true;
 						System.out.println("作業終了");
-					    } 
+					    }
 						else if (q.equals("n")) {
 						System.out.println("作業を中断します");
 						k = true;
-					    } 
+					    }
 						else {
 						throw new InputMismatchException();
 					    }
 				 } else {
-					//書き込み  
+					//書き込み
 					Files.write(path4, linesList, charset, StandardOpenOption.TRUNCATE_EXISTING); //書き込み
 					System.out.println("書込み作業終了");
 					break;

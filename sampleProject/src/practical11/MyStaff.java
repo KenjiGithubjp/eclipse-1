@@ -1,9 +1,9 @@
-package practical11;
+package practical11; //comparatorインターフェースを使い、指定したキーと順番で並び変えるプログラム
 
 import java.util.Comparator;
 
 public class MyStaff {
-	
+
 	//フ
 	private int id;
 	private String name;
@@ -51,7 +51,7 @@ class MynameAscend implements Comparator<MyStaff>{
 	public int compare(MyStaff o1, MyStaff o2) {
 		return o1.getNameKana().compareTo(o2.getNameKana());
 	}
-}	
+}
 //id Descend
 class MyIdDescend implements Comparator <MyStaff>{
 	@Override

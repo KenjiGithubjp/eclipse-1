@@ -1,4 +1,4 @@
-package practical11;
+package practical11; //comparatorインターフェースを使い、指定したキーと順番で並び変えるプログラム
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,9 +9,9 @@ import java.util.Scanner;
 public class Practice {
 
 	public static void main(String[] args) {
-		
+
 		ArrayList <MyStaff> staffs = new ArrayList<>();
-		
+
 		staffs.add(new MyStaff(1, "田中太郎", "たなか　たろう",20));
 		staffs.add(new MyStaff(2, "鈴木二郎", "すずき　じろう", 40));
 		staffs.add(new MyStaff(3, "山田花子", "やまだ　はなこ", 19));
@@ -21,14 +21,14 @@ public class Practice {
 		staffs.add(new MyStaff(7, "和田花", "わだ　はな", 30));
 		staffs.add(new MyStaff(8, "山崎蓮", "やまざき　れん", 28));
 		staffs.add(new MyStaff(9, "三浦一美", "みうら　かずみ", 33));
-		
-		
+
+
 		ArrayList<String> list = new ArrayList<>();
-		list.add("1:社員id 昇順"); 
+		list.add("1:社員id 昇順");
 		list.add("2:社員name 昇順");
 		list.add("3:社員id 降順");
 		list.add("9:終了end　戻る");
-		
+
 		//ソート前　出力
 		System.out.println("************並び替え前");
 		for (MyStaff mystaff : staffs) {
@@ -40,7 +40,7 @@ public class Practice {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("ソートする基準を選んで下さい。" + list + ">");
 	    int num = scanner.nextInt();
-	    
+
 	    switch(num) {
 	    case 1: //id 昇順
 	    	Collections.sort(staffs, new MyIdAscend());
@@ -57,13 +57,13 @@ public class Practice {
 		case 9: //終了させない
 			System.out.println("終了せず戻ります。");
 			continue;
-		default: 
+		default:
 	    	System.out.println("不正な入力です。");
 	    	continue;
 		}
 		if(isContinue) {
 			for (MyStaff mystaff : staffs) {
-				System.out.println(mystaff.toString());	
+				System.out.println(mystaff.toString());
 			}
 
 		}
@@ -71,13 +71,13 @@ public class Practice {
 	    }
 }
 
-	
 
 
-		
 
 
-		
-		
-		
+
+
+
+
+
 
