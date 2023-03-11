@@ -5,7 +5,6 @@ import java.util.Random;
 
 public class RandomNumberGenerator {
 
-	   
 		Random random = new Random();
 
 		// 1-9の数字、ランダムに設定、表示

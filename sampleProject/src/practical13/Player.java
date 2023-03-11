@@ -15,7 +15,6 @@ public class Player {
 	//  次の数字が現在の数字よりも大きいか・小さいか。予測を数字で入力する。　　
 	//	形式が異なる時は再入力・範囲が異なる時は再入力
 
-
 	while(true){
 			System.out.print("次の数値はBig or Small? (Big:0 Small:1) ");
 		try {

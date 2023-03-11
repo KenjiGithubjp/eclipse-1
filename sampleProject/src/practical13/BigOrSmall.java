@@ -86,7 +86,6 @@ public class BigOrSmall {
 					isContinue = false;
 					break;
 				}
-
 			}
 
 			//例外
